@@ -3,54 +3,102 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; /* Adds smooth scrolling to the whole page */
+    background-color: linear-gradient(140deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+} 
+body, p, h1, h2, h3, h4, h5, h6{
+    font-family: 'General Sans', sans-serif; /* Ensure this font is applied properly */
+}
 
-h1{
+
+h1.headtitle{
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+    font-family: "General Sans", sans-serif;
     color: black;
     text-align: center;
+}
+p.headtitle{
+    font-size: 20px;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 540;
+    font-family: 'General Sans', sans-serif;
 }
 
 .headtitle{
     font-size: 1.2rem;
-    font-family: "DM Sans", sans-serif;
+    font-family: "General Sans", sans-serif;
     text-align:center;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
+    padding: 0;
+    margin: 0 0 10px 0px;
     color: #222725;
 }
+
+/* NAV */
+nav{
+    display: flex; /* This turns the <nav> into a flex container */
+    justify-content: center; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+    padding: 0px 20px; /* Add horizontal padding */
+    background-color: rgb(248, 248, 251); /* Light BG color */
+}
+ul{
+    display: flex; /* This turns <ul> into a flex container */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default bullet points */
+}
+li{
+    margin: 0px 30px; /* Adds space between each list items */
+    font-size: 1rem;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: black; /* Nice black hover for pro vibes */
+  }
 
 hr{
     width: 90%;
-    margin: 0px auto 6px auto;
+    margin: 0 auto 6px auto;
 }
 
 body{
+    margin: 0 10px;
+    padding: 10px;
     font-size: 1rem;
     font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-    background-color: #f7f7f2;
+    font-family: 'General Sans', sans-serif;
+
+    /* background: #f4f4f4; */
     color: #222725;
 }
 
-.card{
-    box-sizing: border-box;
-    width: min (90% 320px);
-    padding:  1rem 1.5rem;
-    margin: 1.2rem auto;
-    border: 2px solid #ffffff;
+.one, .two, .three, .four, .five {
+    padding: 30px;
+    border: 2px solid black;
     border-radius: 8px;
-    border-color: black;
-    text-align: center;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.504);
-    background-color:#fafaff;
+    margin: 8px 0;
+    width: 100%;
+    color: white;
 }
-.card h1{
-    font-size: 1.5rem;
-    letter-spacing: 0.8px;
-    margin-bottom: 0.3rem;
-}
+.one h2{color: white; margin: 5px;} .two h2{color: white; margin: 5px;} .three h2{color: white; margin: 5px;} .four h2{color: white; margin: 5px;} .five h2{color: white; margin: 5px;}
+.one   { background: linear-gradient(145deg, #0f0f0f 0%, #1a1a1a 100%); }
+.two   { background: linear-gradient(145deg, #120f1a 0%, #1f1a2b 100%); }
+.three { background: linear-gradient(145deg, #0f1a17 0%, #1a2b28 100%); }
+.four  { background: linear-gradient(145deg, #1a1610 0%, #2b241a 100%); }
+.five  { background: linear-gradient(145deg, #1a1010 0%, #2b1a1a 100%); }
+
 
 footer{
     font-size: 0.8rem;
@@ -58,12 +106,22 @@ footer{
     font-family: "DM Sans", sans-serif;
     color: #222725;
     text-align: center;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
 }
 
 .social-link{
-    justify-content: center;
     display: flex;
-    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    margin: 5px;
+    list-style: none;
+}
+li{
+    margin: 0 8px;
 }
 
