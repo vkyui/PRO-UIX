@@ -21,7 +21,7 @@ h1.headtitle{
     color: black;
     text-align: center;
 }
-p.headtitle{
+p.role-title{
     font-size: 20px;
 }
 
@@ -46,7 +46,8 @@ nav{
     justify-content: center; /* Distribute space between items */
     align-items: center; /* Align items vertically */
     padding: 0px 20px; /* Add horizontal padding */
-    background-color: rgb(248, 248, 251); /* Light BG color */
+    background: rgb(248, 248, 251); /* Light BG color */
+    border-radius: 8px; /* Rounded corners */
 }
 ul{
     display: flex; /* This turns <ul> into a flex container */
@@ -56,11 +57,11 @@ ul{
 }
 li{
     margin: 0px 30px; /* Adds space between each list items */
-    font-size: 1rem;
 }
 a {
     text-decoration: none;
     color: #333;
+    font-size: 1rem;
     font-weight: 800;
     transition: color 0.3s ease;
   }
@@ -74,8 +75,8 @@ hr{
 }
 
 body{
-    margin: 0 10px;
-    padding: 10px;
+    margin: 0 300px 5px 300px;
+    padding: 0;
     font-size: 1rem;
     font-weight: 600;
     font-family: 'General Sans', sans-serif;
@@ -85,14 +86,17 @@ body{
 }
 
 .one, .two, .three, .four, .five {
-    padding: 30px;
+    padding: 25px;
     border: 2px solid black;
     border-radius: 8px;
-    margin: 8px 0;
+    margin: 10px 0;
     width: 100%;
     color: white;
 }
-.one h2{color: white; margin: 5px;} .two h2{color: white; margin: 5px;} .three h2{color: white; margin: 5px;} .four h2{color: white; margin: 5px;} .five h2{color: white; margin: 5px;}
+.one h2, .two h2, .three h2, .four h2, .five h2 {
+    color: white; margin: 0 0 10px 0;
+}
+
 .one   { background: linear-gradient(145deg, #0f0f0f 0%, #1a1a1a 100%); }
 .two   { background: linear-gradient(145deg, #120f1a 0%, #1f1a2b 100%); }
 .three { background: linear-gradient(145deg, #0f1a17 0%, #1a2b28 100%); }
@@ -109,19 +113,29 @@ footer{
     padding: 10px 0 0 0;
 }
 
-.social-link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-ul{
+
+.social-link ul {
     display: flex;
     justify-content: center;
-    padding: 4px 0;
-    margin: 5px;
+    gap: 0; /* cleaner spacing */
+    padding: 0;
+    margin: 10px auto;
     list-style: none;
 }
-li{
-    margin: 0 8px;
+.social-link li {
+    margin: 0 10px; /* space between icons */
+    
+   
 }
+.social-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333; /* or any theme color */
+    transition: color 0.2s ease-in-out;
+}
+
+.social-link a:hover {
+    color: black; /* hover color */
+}
+
 
