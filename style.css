@@ -7,25 +7,26 @@ html, body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth; /* Adds smooth scrolling to the whole page */
-    background-color: linear-gradient(140deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+    background: linear-gradient(140deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
 } 
 body, p, h1, h2, h3, h4, h5, h6{
     font-family: 'General Sans', sans-serif; /* Ensure this font is applied properly */
 }
 
-h1.headtitle{
-    font-size: 60px;
+.headtitle h1{
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: "General Sans", sans-serif;
     color: black;
     text-align: center;
 }
-p.role-title{
-    font-size: 30px;
+.role-title {
+    font-size: 1.5rem;
     color: rgb(72, 72, 72);
     text-align: center;
-    padding: 0;
+    padding: 0 0px;
     margin: 0;
+    box-sizing: content-box;
 }
 
 .headtitle{
@@ -49,16 +50,14 @@ ul{
     display: flex; /* This turns <ul> into a flex container */
     padding: 0;
     margin: 0;
+    gap: 90px;
     list-style: none; /* Removes default bullet points */
 }
-li{
-    margin: 0px 30px; /* Adds space between each list items */
-    
-}
+
 a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 800;
     transition: color 0.3s ease;
   }
@@ -133,3 +132,31 @@ footer{
 .social-link a:hover {
     color: black; /* hover color */
 }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Mobile-first mindset */
+/* @media (max-width: 425px) { Phones } */
+/* @media (min-width: 426px) and (max-width: 768px) { Tablets } */
+/* @media (min-width: 769px) and (max-width: 1024px) { Laptops } */
+/* @media (min-width: 1025px) { Desktops } */
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 425px) {
+    .headtitle h1{
+        font-size: 2rem;
+        /* color: blue; */
+    }
+    .role-title {
+        width: 50px;
+        height: 50px;
+        /* padding: 40px 0; */
+        font-size: 1rem; 
+        /* color: blue; */
+    }
+    nav a {
+        gap: 0px;
+    }
+}
+
