@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+#project-no {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000000;
+  background: #fff;
+  width: 100px;
+  margin: 15px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 100px;
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 body {
   margin: 0;
   font-family: "General Sans", sans-serif;
@@ -103,7 +120,7 @@ body {
   }
 }
 
-/* --------- N A V - 1 --------- */
+/* ----------------------------- N A V - 1 ----------------------------- */
 
 .NAV-1 {
   padding: 0 5px;
@@ -209,3 +226,147 @@ body {
   gap: 30px;
   list-style: none;
 }
+
+/* ----------------------------- P R I C I N G - C A R D S - O P E N A I ----------------------------- */
+
+.PRICING-CARDS-OPENAI {
+  /* LAYOUT */
+  padding: 25px 2px 50px;
+  margin: 4rem 2rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  /* height: 100vh; */
+  /* FONT */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: black;
+}
+.openai-header-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius:8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+  /* FONT */
+  color: white;
+  background: black;
+}
+.openai-header-top p {
+  /* Closest OpenAI Sans clone combo */
+  font-family: 'Inter', 'Manrope', 'Satoshi', sans-serif;
+  font-size: 0.75rems;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+.openai-header-bottom h1 {
+  margin-top: 32px;
+  margin-bottom: 80px;
+  text-align: center;
+  /* Closest OpenAI Sans clone combo */
+  font-family: 'Inter', 'Manrope', 'Satoshi', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+}
+/* P R I C I N G */
+.openai-plans-price-top {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 26px;
+}
+.openai-plans-price-top-free, .openai-plans-price-top-plus, .openai-plans-price-top-pro {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: stretch;
+  gap: 1.25rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+  flex: 1 1 20%;
+  min-height: 100%;
+}
+.openai-plans-price-top-free-header, .openai-plans-price-top-plus-header, .openai-plans-price-top-pro-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.openai-plans-price-top-free-overview, .openai-plans-price-top-plus-overview, .openai-plans-price-top-pro-overview {
+  /* padding: 0 24px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1rem;
+} 
+.openai-plans-price-top-free-overview ul, .openai-plans-price-top-plus-overview ul, .openai-plans-price-top-pro-overview ul{
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+.openai-plans-price-top-free-overview p, .openai-plans-price-top-plus-overview p, .openai-plans-price-top-pro-overview p {
+  font-size: 0.875rem;
+}
+.openai-plans-price-top-free h2, .openai-plans-price-top-plus h2, .openai-plans-price-top-pro h2 {
+  /* font-size: 1.5rem; */
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+.openai-plans-price-top-free-pricing, .openai-plans-price-top-plus-pricing, .openai-plans-price-top-pro-pricing {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: auto;
+  gap: 12px;
+}
+.openai-plans-price-top-free-pricing-top h3, .openai-plans-price-top-plus-pricing-top h3, .openai-plans-price-top-pro-pricing-top h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.openai-plans-price-top-free-pricing-top, .openai-plans-price-top-plus-pricing-top, .openai-plans-price-top-pro-pricing-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.openai-plans-price-top-free-pricing-top .cost, .openai-plans-price-top-plus-pricing-top .cost, .openai-plans-price-top-pro-pricing-top .cost {
+  margin-right: 0.35rem;
+}
+.openai-plans-price-top-free-pricing-top .per-month, .openai-plans-price-top-plus-pricing-top .per-month, .openai-plans-price-top-pro-pricing-top .per-month {
+  margin-left: 0.15rem;
+}
+.openai-plans-price-top-free-pricing-top .per-month, .openai-plans-price-top-plus-pricing-top .per-month, .openai-plans-price-top-pro-pricing-top .per-month {
+  font-size: 0.975rem;
+  text-align: center;
+}
+
+.openai-plans-price-top-free-pricing-bottom button, .openai-plans-price-top-plus-pricing-bottom button, .openai-plans-price-top-pro-pricing-bottom button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* all: unset; */
+  color: white;
+  background: black;
+  padding: 0.4rem 0.925rem;
+  font-size: 0.925rem;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+/* .openai-plans-price-top-free-pricing-bottom button:hover, .openai-plans-price-top-plus-pricing-bottom button:hover, .openai-plans-price-top-pro-pricing-bottom button:hover { */
+  /* background-color: #374151; slate-700 */
+  /* transform: translateY(-1px); }*/
+
+/* .openai-plans-price-top-free-pricing-bottom button:active, .openai-plans-price-top-plus-pricing-bottom button:active, .openai-plans-price-top-pro-pricing-bottom button:active { */
+  /* background-color: #111827; slate-900 */
+  /* transform: translateY(1px); 
+ } */
